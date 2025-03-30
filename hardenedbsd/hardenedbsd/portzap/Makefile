@@ -21,4 +21,7 @@ BATCH=          yes
 NO_ARCH=        yes
 NO_BUILD=       yes
 
+do-install:
+	${MAKE} -C ${WRKSRC} PREFIX=${STAGEDIR}${PREFIX} install
+
 .include <bsd.port.mk>
