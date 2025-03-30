@@ -1,6 +1,6 @@
 ## About
 
-A collection of unofficial FreeBSD / OpenBSD ports.
+A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 ## Ports
 
@@ -14,7 +14,10 @@ A collection of unofficial FreeBSD / OpenBSD ports.
   Provides a standard installation of Ruby 3.3.
 * [mail/hydroxide](freebsd/mail/hydroxide) <br>
   A third-party, open-source ProtonMail bridge.
-* [hardenedbsd/portzap](freebsd/hardenedbsd/portzap) <br>
+
+### HardenedBSD
+
+* [hardenedbsd/portzap](hardenedbsd/hardenedbsd/portzap) <br>
   A utility that manages a local copy of the
   [hardenedbsd ports tree](https://git.hardenedbsd.org/hardenedbsd/ports).
 
@@ -24,6 +27,6 @@ None so far.
 
 ## Sources
 
-* [GitHub](https://github.com/0x1eef/ports)
-* [GitLab](https://gitlab.com/0x1eef/ports)
-* [https://git.hardenedbsd.org](https://git.hardenedbsd.org/0x1eef/ports)
+* [github.com/@0x1eef](https://github.com/0x1eef/myports)
+* [gitlab.com/@0x1eef](https://gitlab.com/0x1eef/myports)
+* [git.hardenedbsd.org/@0x1eef](https://git.hardenedbsd.org/0x1eef/myports)
