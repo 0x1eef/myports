@@ -19,9 +19,8 @@ GL_COMMIT=	08156641026d27ace3bfb0f665cc231bebdbef9f
 
 BATCH=          yes
 NO_ARCH=        yes
-NO_BUILD=       yes
 
-do-install:
+do-build:
 	${MAKE} -C ${WRKSRC} PREFIX=${STAGEDIR}${PREFIX} install
 
 .include <bsd.port.mk>
