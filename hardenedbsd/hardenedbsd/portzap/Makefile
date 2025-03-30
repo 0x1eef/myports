@@ -1,5 +1,5 @@
 PORTNAME=           portzap
-PORTVERSION=        0.12.0
+PORTVERSION=        1.2.1
 DISTVERSIONPREFIX=  v
 CATEGORIES=         hardenedbsd
 
@@ -15,13 +15,10 @@ USE_GITLAB=     yes
 GL_SITE=	https://git.hardenedbsd.org
 GL_ACCOUNT=     0x1eef
 GL_PROJECT=	portzap
-GL_COMMIT=	48d182813cc3342c9ecc265ea756c4126a793427
+GL_COMMIT=	d4aca4a40ac070ec1d30c553d8b68beec1ab0f84
 
 BATCH=          yes
 NO_ARCH=        yes
 NO_BUILD=       yes
-
-do-install:
-	${MAKE} -C ${WRKSRC} PREFIX=${STAGEDIR}${PREFIX} install
 
 .include <bsd.port.mk>
