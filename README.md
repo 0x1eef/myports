@@ -14,6 +14,8 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
   Provides a standard installation of Ruby 3.3
 * [mail/hydroxide](freebsd/mail/hydroxide) <br>
   A third-party, open-source ProtonMail bridge
+* [sysutils/bones](freebsd/sysutils/bones) <br>
+  Clone, pull, and install skeletons from a git repository
 
 ### HardenedBSD
 
