@@ -18,6 +18,12 @@ and it has been updated to use a recent version of code-server.
 
 ## Usage
 
+> NOTE:
+> The file permissions one has when using vscode from a web browser is dependant
+> on the user/group you choose to run this service. It defaults to `nobody` for
+> security reasons but you will probably want to specify a different user with
+> the appropriate permissions for your use case in `/etc/rc.conf`
+
 Run from the CLI:
 
 ```sh
@@ -33,14 +39,6 @@ service code_server stop    # Stop service
 service code_server restart # Restart service
 service code_server status  # Status of service
 ```
-
-> NOTE:
-> The file permissions one has when using vscode from a web browser is dependant
-> on the user/group you choose to run this service. It defaults to `nobody` for
-> security reasons but you will probably want to specify a different user with
-> the appropriate permissions for your use case in `/etc/rc.conf` like:
-
-
 
 ## Browser
 
