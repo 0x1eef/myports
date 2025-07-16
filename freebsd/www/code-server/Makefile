@@ -40,4 +40,7 @@ do-install:
 	${CP} -R ${WRKSRC}/* ${STAGEDIR}${DATADIR}
 	${RLN} ${STAGEDIR}${DATADIR}/out/node/entry.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
+post-patch:
+	@${REINPLACE_CMD} -e 's|process.platform|"linux"|g' ${WRKSRC}/lib/vscode/out/vs/platform/terminal/node/ptyHostMain.js
+
 .include <bsd.port.mk>
