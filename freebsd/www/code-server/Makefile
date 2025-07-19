@@ -71,7 +71,7 @@ _build_code_server_tarballs:
 	tar -czf \
     	code-server-node-modules-${DISTVERSION}.tgz \
     	${PORTNAME}-${DISTVERSION}/node_modules \
-    	${PORTNAME}-${DISTVERSION}/out > /dev/null 2>&1
+    	${PORTNAME}-${DISTVERSION}/out
 	@${ECHO} "${WRKDIR}/code-server-node-modules-${DISTVERSION}.tgz"
 
 .include <bsd.port.mk>
