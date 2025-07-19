@@ -59,7 +59,7 @@ _build_code_server: extract
 
 _build_code_server_tarballs:
 	cd ${WRKDIR} && \
-		tar -czf \
+	tar -czf \
     	vscode-node-modules-${DISTVERSION}.tgz \
     	${PORTNAME}-${DISTVERSION}/lib/vscode/node_modules \
     	${PORTNAME}-${DISTVERSION}/lib/vscode/remote/node_modules \
@@ -68,7 +68,7 @@ _build_code_server_tarballs:
 	@${ECHO} "${WRKDIR}/vscode-node-modules-${DISTVERSION}.tgz"
 
 	cd ${WRKDIR} && \
-		tar -czf \
+	tar -czf \
     	code-server-node-modules-${DISTVERSION}.tgz \
     	${PORTNAME}-${DISTVERSION}/node_modules \
     	${PORTNAME}-${DISTVERSION}/out > /dev/null 2>&1
