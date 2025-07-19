@@ -1,3 +1,7 @@
-TIMESTAMP = 1751324000
-SHA256 (code-server-4.101.2.tgz) = 6f53a281ac4c2db0ea61f7f48d82e80312e5627342838b26a6127f81267b8aca
-SIZE (code-server-4.101.2.tgz) = 42838700
+TIMESTAMP = 1752893085
+SHA256 (code-server/vscode-node-modules-4.101.2.tar.gz) = 574cf485345261d4fc8dbf203c97c0f23c3eda354876dc8520f09071bef14f4e
+SIZE (code-server/vscode-node-modules-4.101.2.tar.gz) = 267981216
+SHA256 (code-server/code-server-node-modules-4.101.2.tar.gz) = 12afc9be142cb689aec89222915389838cd47446b824814ee2cff6afff47fd0e
+SIZE (code-server/code-server-node-modules-4.101.2.tar.gz) = 3795851
+SHA256 (code-server/coder-code-server-4.101.2-v4.101.2_GH0.tar.gz) = 45d35d0e733fc3843694e4277869b9c12b076c64965aad66d499543154108a62
+SIZE (code-server/coder-code-server-4.101.2-v4.101.2_GH0.tar.gz) = 770310
