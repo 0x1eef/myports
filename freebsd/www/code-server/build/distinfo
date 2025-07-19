@@ -1,0 +1,5 @@
+TIMESTAMP = 1753072532
+SHA256 (code-server/1.102.0.tar.gz) = 2d48c358a22d12c2bc024673d08300b3dd45c6859f8a3e4d16480100b16a0a31
+SIZE (code-server/1.102.0.tar.gz) = 22977577
+SHA256 (code-server/coder-code-server-4.101.2-v4.101.2_GH0.tar.gz) = 45d35d0e733fc3843694e4277869b9c12b076c64965aad66d499543154108a62
+SIZE (code-server/coder-code-server-4.101.2-v4.101.2_GH0.tar.gz) = 770310
