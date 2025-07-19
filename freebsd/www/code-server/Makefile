@@ -42,8 +42,6 @@ post-extract:
 post-patch:
 	@${REINPLACE_CMD} -e 's|process.platform|"linux"|g' ${WRKSRC}/lib/vscode/out/vs/platform/terminal/node/ptyHostMain.js
 
-do-build:
-
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${CP} -R ${WRKSRC}/* ${STAGEDIR}${DATADIR}
