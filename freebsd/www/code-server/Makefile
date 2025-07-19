@@ -48,7 +48,7 @@ do-install:
 	${RLN} ${STAGEDIR}${DATADIR}/out/node/entry.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 # port maintainers
-_build_code_server: extract
+_build_code_server: patch
 	cd ${WRKSRC} && \
 	npm i && \
 	npm run build
