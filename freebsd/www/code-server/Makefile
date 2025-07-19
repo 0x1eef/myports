@@ -47,4 +47,29 @@ do-install:
 	${CP} -R ${WRKSRC}/* ${STAGEDIR}${DATADIR}
 	${RLN} ${STAGEDIR}${DATADIR}/out/node/entry.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
+# port maintainers
+_build_code_server: extract
+	cd ${WRKSRC} && \
+	npm i && \
+	npm run build
+
+	cd ${WRKSRC}/lib/vscode && \
+	npm i && \
+	npm run compile
+
+_build_code_server_tarballs:
+	tar -vczf \
+    	${WRKDIR}/vscode-node-modules-${DISTVERSION}.tgz \
+    	${WRKSRC}/lib/vscode/node_modules \
+    	${WRKSRC}/lib/vscode/remote/node_modules \
+    	${WRKSRC}/lib/vscode/extensions/*/node_modules \
+    	${WRKSRC}/lib/vscode/out
+	@${ECHO} "${WRKDIR}/vscode-node-modules-${DISTVERSION}.tgz"
+
+	tar -vczf \
+    	${WRKDIR}/code-server-node-modules-${DISTVERSION}.tgz \
+    	${WRKSRC}/node_modules \
+    	${WRKSRC}/out
+	@${ECHO} "${WRKDIR}/code-server-node-modules-${DISTVERSION}.tgz"
+
 .include <bsd.port.mk>
