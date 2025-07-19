@@ -58,18 +58,20 @@ _build_code_server: extract
 	npm run compile
 
 _build_code_server_tarballs:
-	tar -vczf \
-    	${WRKDIR}/vscode-node-modules-${DISTVERSION}.tgz \
-    	${WRKSRC}/lib/vscode/node_modules \
-    	${WRKSRC}/lib/vscode/remote/node_modules \
-    	${WRKSRC}/lib/vscode/extensions/*/node_modules \
-    	${WRKSRC}/lib/vscode/out
+	cd ${WRKDIR} && \
+		tar -czf \
+    	vscode-node-modules-${DISTVERSION}.tgz \
+    	${PORTNAME}-${DISTVERSION}/lib/vscode/node_modules \
+    	${PORTNAME}-${DISTVERSION}/lib/vscode/remote/node_modules \
+    	${PORTNAME}-${DISTVERSION}/lib/vscode/extensions/*/node_modules \
+    	${PORTNAME}-${DISTVERSION}/lib/vscode/out
 	@${ECHO} "${WRKDIR}/vscode-node-modules-${DISTVERSION}.tgz"
 
-	tar -vczf \
-    	${WRKDIR}/code-server-node-modules-${DISTVERSION}.tgz \
-    	${WRKSRC}/node_modules \
-    	${WRKSRC}/out
+	cd ${WRKDIR} && \
+		tar -czf \
+    	code-server-node-modules-${DISTVERSION}.tgz \
+    	${PORTNAME}-${DISTVERSION}/node_modules \
+    	${PORTNAME}-${DISTVERSION}/out > /dev/null 2>&1
 	@${ECHO} "${WRKDIR}/code-server-node-modules-${DISTVERSION}.tgz"
 
 .include <bsd.port.mk>
