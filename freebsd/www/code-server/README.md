@@ -1,7 +1,7 @@
 ## www/code-server
 
 [code-server](https://github.com/coder/code-server) can run VS Code
-in your browser, from anywhere. This project is a fork of 
+in your browser, from anywhere. This project is a fork of
 [Rob4226/code-server-freebsd-port](https://github.com/Rob4226/code-server-freebsd-port)
 and it has been updated to use a recent version of code-server.
 
@@ -47,4 +47,20 @@ service code_server status  # Status of service
 IP address, port, and more can be set in `config.yaml`
 See `coder/code-server` repo for docs: https://github.com/coder/code-server
 
+## Maintainers
 
+The [build/](build/) subdirectory has its own Makefile. It will produce
+a tarball that includes a fully built code-server. This would be done
+by a maintainer, and the tarball uploaded as a github reelease.
+
+The port Makefile in the parent directory then only downloads and
+extracts the contents of the earlier build. This process avoids trying
+to download assets outside the fetch phase - either during build or
+install, which is typical for NPM projects and something the official
+FreeBSD ports system does not allow.
+
+The build process:
+
+    $ cd build/
+    $ make clean build
+    $ ls work/code-server-X.X.X.tgz
