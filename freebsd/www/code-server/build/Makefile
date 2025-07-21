@@ -1,13 +1,15 @@
 PORTNAME=	code-server
-MASTER_SITES= https://github.com/microsoft/vscode/archive/refs/tags/:vscode
-MAINTAINER=	0x1eef@protonmail.com
 DISTVERSION=	4.101.2
+CATEGORIES=	devel
+MASTER_SITES= https://github.com/microsoft/vscode/archive/refs/tags/:vscode
 DISTFILES= ${_VSCODE_VERSION}.tar.gz:vscode
 DIST_SUBDIR=	code-server
-CATEGORIES=	www
 _VSCODE_VERSION=1.102.0
 
 BATCH=	1
+MAINTAINER=	0x1eef@protonmail.com
+COMMENT=	Maintainer's makefile for code-server
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	coder
 GH_PROJECT=	code-server
