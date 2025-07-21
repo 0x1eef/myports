@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/release/LICENSE
 
 LIB_DEPENDS= 	libinotify.so:devel/libinotify
-RUN_DEPENDS=	npm-node22>0:www/npm-node22
+RUN_DEPENDS=	npm-node22>0:www/npm-node22 rg:textproc/ripgrep
 
 NO_BUILD=	yes
 
@@ -26,5 +26,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${CP} -R ${WRKSRC}/release/* ${STAGEDIR}${DATADIR}
 	${RLN} ${STAGEDIR}${DATADIR}/out/node/entry.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/code-server/lib/vscode/node_modules/@vscode/ripgrep/bin
+	${LN} -sf ${PREFIX}/bin/rg ${STAGEDIR}${PREFIX}/share/code-server/lib/vscode/node_modules/@vscode/ripgrep/bin/rg
 
 .include <bsd.port.mk>

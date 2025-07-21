@@ -929,6 +929,7 @@ etc/rc.d/code-server
 %%DATADIR%%/lib/vscode/node_modules/@vscode/proxy-agent/package.json
 %%DATADIR%%/lib/vscode/node_modules/@vscode/ripgrep/LICENSE
 %%DATADIR%%/lib/vscode/node_modules/@vscode/ripgrep/SECURITY.md
+%%DATADIR%%/lib/vscode/node_modules/@vscode/ripgrep/bin/rg
 %%DATADIR%%/lib/vscode/node_modules/@vscode/ripgrep/build/pipeline.yml
 %%DATADIR%%/lib/vscode/node_modules/@vscode/ripgrep/jsconfig.json
 %%DATADIR%%/lib/vscode/node_modules/@vscode/ripgrep/lib/download.js
