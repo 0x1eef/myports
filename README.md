@@ -6,6 +6,8 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 ### FreeBSD
 
+* [www/code-server](freebsd/www/code-server/) <br>
+  Provides a pre-built release of [code-server](https://github.com/coder/code-server)
 * [devel/ruby-shims](freebsd/devel/ruby-shims) <br>
   Brings the OpenBSD port of the same name to FreeBSD
 * [lang/ruby32](freebsd/lang/ruby32) <br>
