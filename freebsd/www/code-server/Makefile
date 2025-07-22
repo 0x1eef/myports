@@ -1,7 +1,7 @@
 PORTNAME=	code-server
-DISTVERSION=	4.101.2
+DISTVERSION=	4.102.1
 CATEGORIES=	www
-MASTER_SITES= https://github.com/0x1eef/myports/releases/download/${PORTNAME}-${DISTVERSION}/:codeserver
+MASTER_SITES= https://github.com/0x1eef/myports/releases/download/${PORTNAME}/:codeserver
 DISTFILES=	code-server-${DISTVERSION}.tgz:codeserver
 DIST_SUBDIR=	${PORTNAME}
 
