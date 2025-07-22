@@ -1,10 +1,10 @@
 PORTNAME=	code-server
-DISTVERSION=	4.101.2
+DISTVERSION=	4.102.1
 CATEGORIES=	devel
 MASTER_SITES= https://github.com/microsoft/vscode/archive/refs/tags/:vscode
 DISTFILES= ${_VSCODE_VERSION}.tar.gz:vscode
 DIST_SUBDIR=	code-server
-_VSCODE_VERSION=1.102.0
+_VSCODE_VERSION=1.102.1
 
 BATCH=	1
 MAINTAINER=	0x1eef@protonmail.com
@@ -19,7 +19,7 @@ USES=		tar:tgz shebangfix python:3.0+
 BUILD_DEPENDS=	npm-node22>0:www/npm-node22 rsync>0:net/rsync quilt>0:devel/quilt
 
 post-patch:
-	cd ${WRKSRC} && quilt push -a || true
+	cd ${WRKSRC} && quilt push -a
 
 post-extract:
 	@${MKDIR} ${WRKSRC}/lib/vscode
