@@ -9,7 +9,7 @@ and it has been updated to use a recent version of code-server.
 
 - **code_server_user**  Defaults to "nobody"
 - **code_server_group** Defaults to "nobody"
-- **code_server_config_file** *(filepath)*: Set to /var/code-server/nobody/config.yaml by default. Set to the full filepath of the config file.
+- **code_server_config_file** *(path)*: Set to /var/code-server/nobody/config.yaml by default. Set to the full filepath of the config file.
 - **code_server_user_data_dir** *(path)*: Set to /var/code-server/nobody/user-data by default. Set to the directory path to use for user data.
 - **code_server_extensions_dir** *(path)*: Set to /var/code-server/nobody/extensions by default. Set to the directory path to use for extensions.
 - **code_server_service_url** *(url)*: Set to https://open-vsx.org/vscode/gallery by default. Set to the service url of an extensions marketplace.
