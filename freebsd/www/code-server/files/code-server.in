@@ -14,7 +14,7 @@
 #				                    Set to the user to run the server as.
 # code_server_group_config (group):	Set to nobody by default.
 #				                    Set to the group to run the server as.
-# code_server_config_file (filepath):	Set to /var/code-server/nobody/config.yaml by default.
+# code_server_config_file (path):	Set to /var/code-server/nobody/config.yaml by default.
 #				                        Set to the full filepath of the config file.
 # code_server_user_data_dir (path):	Set to /var/code-server/nobody/user-data by default.
 #				                    Set to the directory path to use for user data.
@@ -53,8 +53,7 @@ default_user_dir="/var/code-server/${code_server_user}"
 : ${code_server_item_url="https://open-vsx.org/vscode/item"}
 
 export PATH=/usr/local/bin:$PATH
-export SERVICE_URL=${code_server_service_url}
-export ITEM_URL=${code_server_item_url}
+export EXTENSIONS_GALLERY="{\"serviceUrl\": \"${code_server_service_url}\",\"itemUrl\": \"${code_server_item_url}\"}"
 export XDG_DATA_HOME="${default_user_dir}"
 export XDG_CONFIG_HOME="${default_user_dir}"
 
