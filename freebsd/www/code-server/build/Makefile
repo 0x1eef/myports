@@ -33,6 +33,7 @@ do-build:
 	  cd lib/vscode && ELECTRON_SKIP_BINARY_DOWNLOAD=1 npm ci && \
 	  cd ../.. && VERSION=${DISTVERSION} npm run build:vscode && \
 	  KEEP_MODULES=1 npm run release
+	find ${WRKSRC} -type f -name '*.pyc' -delete
 	cd ${WRKDIR} && \
 	  tar -czf code-server-${DISTVERSION}.tgz ${PORTNAME}-${DISTVERSION}/release
 	@${ECHO_MSG} "${WRKDIR}/code-server-${DISTVERSION}.tgz"

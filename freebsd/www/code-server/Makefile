@@ -16,8 +16,11 @@ RUN_DEPENDS=	npm-node22>0:www/npm-node22 rg:textproc/ripgrep
 
 NO_BUILD=	yes
 
-USES= 		tar:tgz shebangfix python:3.0+
 USE_RC_SUBR=	${PORTNAME}
+USES= 		tar:tgz shebangfix python:3.0+
+SHEBANG_FILES= ${WRKSRC}/release/lib/vscode/node_modules/jschardet/scripts/run-workflow.sh \
+        ${WRKSRC}/release/lib/vscode/node_modules/jschardet/scripts/show-size-changes.sh \
+        ${WRKSRC}/release/lib/vscode/out/vs/base/node/cpuUsage.sh
 
 post-patch:
 	@${REINPLACE_CMD} -i '' 's|process.platform|"linux"|g' ${WRKSRC}/release/lib/vscode/out/vs/platform/terminal/node/ptyHostMain.js

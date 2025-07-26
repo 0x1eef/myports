@@ -8956,7 +8956,6 @@ etc/rc.d/code-server
 %%DATADIR%%/node_modules/flatted/min.js
 %%DATADIR%%/node_modules/flatted/package.json
 %%DATADIR%%/node_modules/flatted/php/flatted.php
-%%DATADIR%%/node_modules/flatted/python/__pycache__/flatted%%PYTHON_TAG%%.pyc
 %%DATADIR%%/node_modules/flatted/python/flatted.py
 %%DATADIR%%/node_modules/flatted/python/test.py
 %%DATADIR%%/node_modules/flatted/types/index.d.ts
@@ -13211,3 +13210,4 @@ etc/rc.d/code-server
 %%DATADIR%%/src/browser/pages/login.css
 %%DATADIR%%/src/browser/pages/login.html
 %%DATADIR%%/src/browser/robots.txt
+@dir %%DATADIR%%/node_modules/flatted/python/__pycache__
