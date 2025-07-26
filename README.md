@@ -32,6 +32,15 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 None so far.
 
+## Install
+
+The root directory includes a [Makefile](Makefile) that can install
+the ports from this repository into /usr/ports. The install target
+will replace ports that already exist in /usr/ports/ (for example:
+the ruby32, and ruby33 ports fall into this category).
+
+    root@localhost# make install
+
 ## Sources
 
 * [github.com/@0x1eef](https://github.com/0x1eef/myports)
