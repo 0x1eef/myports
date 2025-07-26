@@ -16,7 +16,6 @@ RUN_DEPENDS=	npm-node22>0:www/npm-node22 rg:textproc/ripgrep
 
 NO_BUILD=	yes
 
-USE_RC_SUBR=	${PORTNAME}
 USES= 		tar:tgz shebangfix python:3.0+
 SHEBANG_FILES= ${WRKSRC}/release/lib/vscode/node_modules/jschardet/scripts/run-workflow.sh \
         ${WRKSRC}/release/lib/vscode/node_modules/jschardet/scripts/show-size-changes.sh \
@@ -27,6 +26,7 @@ post-patch:
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_SCRIPT} ${FILESDIR}/code-server.in ${STAGEDIR}${PREFIX}/etc/rc.d/code-server
 	${CP} -R ${WRKSRC}/release/* ${STAGEDIR}${DATADIR}
 	${RLN} ${STAGEDIR}${DATADIR}/out/node/entry.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/code-server/lib/vscode/node_modules/@vscode/ripgrep/bin
