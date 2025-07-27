@@ -10,9 +10,9 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
   Provides a pre-built release of [code-server](https://github.com/coder/code-server)
 * [devel/ruby-shims](freebsd/devel/ruby-shims) <br>
   Brings the OpenBSD port of the same name to FreeBSD
-* [lang/ruby32](freebsd/lang/ruby32) <br>
+* [lang/ruby32-std](freebsd/lang/ruby32-std) <br>
   Provides a standard installation of Ruby 3.2
-* [lang/ruby33](freebsd/lang/ruby33) <br>
+* [lang/ruby33-std](freebsd/lang/ruby33-std) <br>
   Provides a standard installation of Ruby 3.3
 * [mail/hydroxide](freebsd/mail/hydroxide) <br>
   A third-party, open-source ProtonMail bridge
@@ -36,8 +36,7 @@ None so far.
 
 The root directory includes a [Makefile](Makefile) that can install
 the ports from this repository into /usr/ports. The install target
-will replace ports that already exist in /usr/ports/ (for example:
-the ruby32, and ruby33 ports fall into this category).
+will replace ports that already exist in /usr/ports.
 
     root@localhost# make install
 
