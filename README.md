@@ -8,12 +8,6 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 * [www/code-server](freebsd/www/code-server/) <br>
   Provides a pre-built release of [code-server](https://github.com/coder/code-server)
-* [devel/ruby-shims](freebsd/devel/ruby-shims) <br>
-  Brings the OpenBSD port of the same name to FreeBSD
-* [lang/ruby32-std](freebsd/lang/ruby32-std) <br>
-  Provides a standard installation of Ruby 3.2
-* [lang/ruby33-std](freebsd/lang/ruby33-std) <br>
-  Provides a standard installation of Ruby 3.3
 * [mail/hydroxide](freebsd/mail/hydroxide) <br>
   A third-party, open-source ProtonMail bridge
 * [sysutils/bones](freebsd/sysutils/bones) <br>
