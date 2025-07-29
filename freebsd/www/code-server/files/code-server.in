@@ -35,7 +35,7 @@
 
 . /etc/rc.subr
 
-name=code-server
+name=code_server
 desc="VS Code in the browser"
 rcvar=code_server_enable
 
