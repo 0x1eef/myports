@@ -1,5 +1,5 @@
-TIMESTAMP = 1753225353
-SHA256 (code-server/1.102.1.tar.gz) = b018b0f447cdd88674d92659ddd1688f64e11a1c05a16773d8fa5a22072fd13e
-SIZE (code-server/1.102.1.tar.gz) = 22977874
-SHA256 (code-server/coder-code-server-4.102.1-v4.102.1_GH0.tar.gz) = a9ad34a7bc8cc0680a136ac0a90b60c7068d2992179e7b67ce5e68c608472310
-SIZE (code-server/coder-code-server-4.102.1-v4.102.1_GH0.tar.gz) = 782434
+TIMESTAMP = 1753787598
+SHA256 (code-server/1.102.2.tar.gz) = 1f14a299aca4bb8016d16f4d50baf658ccfb8eafece1a3027e25154b4c5d37ed
+SIZE (code-server/1.102.2.tar.gz) = 22978413
+SHA256 (code-server/coder-code-server-4.102.2-v4.102.2_GH0.tar.gz) = 08948186a6ba6a61b6d07f88b88f296bd842a7efa5f16a9fda7f85f61f3aade5
+SIZE (code-server/coder-code-server-4.102.2-v4.102.2_GH0.tar.gz) = 782477

@@ -1125,6 +1125,7 @@ etc/rc.d/code-server
 %%DATADIR%%/lib/vscode/node_modules/deep-extend/package.json
 %%DATADIR%%/lib/vscode/node_modules/detect-libc/LICENSE
 %%DATADIR%%/lib/vscode/node_modules/detect-libc/lib/detect-libc.js
+%%DATADIR%%/lib/vscode/node_modules/detect-libc/lib/filesystem.js
 %%DATADIR%%/lib/vscode/node_modules/detect-libc/lib/process.js
 %%DATADIR%%/lib/vscode/node_modules/detect-libc/package.json
 %%DATADIR%%/lib/vscode/node_modules/end-of-stream/LICENSE
@@ -1343,7 +1344,6 @@ etc/rc.d/code-server
 %%DATADIR%%/lib/vscode/node_modules/node-abi/abi_registry.json
 %%DATADIR%%/lib/vscode/node_modules/node-abi/index.js
 %%DATADIR%%/lib/vscode/node_modules/node-abi/package.json
-%%DATADIR%%/lib/vscode/node_modules/node-abi/scripts/update-abi-registry.js
 %%DATADIR%%/lib/vscode/node_modules/node-pty/LICENSE
 %%DATADIR%%/lib/vscode/node_modules/node-pty/build/Release/pty.node
 %%DATADIR%%/lib/vscode/node_modules/node-pty/lib/conpty_console_list_agent.js
@@ -1440,6 +1440,7 @@ etc/rc.d/code-server
 %%DATADIR%%/lib/vscode/node_modules/proxy-from-env/package.json
 %%DATADIR%%/lib/vscode/node_modules/proxy-from-env/test.js
 %%DATADIR%%/lib/vscode/node_modules/pump/LICENSE
+%%DATADIR%%/lib/vscode/node_modules/pump/SECURITY.md
 %%DATADIR%%/lib/vscode/node_modules/pump/index.js
 %%DATADIR%%/lib/vscode/node_modules/pump/package.json
 %%DATADIR%%/lib/vscode/node_modules/pump/test-browser.js
@@ -1512,6 +1513,7 @@ etc/rc.d/code-server
 %%DATADIR%%/lib/vscode/node_modules/semver/internal/constants.js
 %%DATADIR%%/lib/vscode/node_modules/semver/internal/debug.js
 %%DATADIR%%/lib/vscode/node_modules/semver/internal/identifiers.js
+%%DATADIR%%/lib/vscode/node_modules/semver/internal/lrucache.js
 %%DATADIR%%/lib/vscode/node_modules/semver/internal/parse-options.js
 %%DATADIR%%/lib/vscode/node_modules/semver/internal/re.js
 %%DATADIR%%/lib/vscode/node_modules/semver/package.json
@@ -4905,7 +4907,7 @@ etc/rc.d/code-server
 %%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/.deps/Release/obj.target/libargon2/argon2/src/encoding.o.d
 %%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/.deps/Release/obj.target/libargon2/argon2/src/opt.o.d
 %%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/.deps/Release/obj.target/libargon2/argon2/src/thread.o.d
-%%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/.deps/home/developer/p/git.home.network/0x1eef/sh/myports/freebsd/%%WWWDIR%%/build/work/code-server-4.102.1/node_modules/argon2/lib/binding/napi-v3/argon2.node.d
+%%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/.deps/home/developer/p/git.home.network/0x1eef/sh/myports/freebsd/%%WWWDIR%%/build/work/code-server-4.102.2/node_modules/argon2/lib/binding/napi-v3/argon2.node.d
 %%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/argon2.a
 %%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/argon2.node
 %%DATADIR%%/node_modules/argon2/build-tmp-napi-v3/Release/obj.target/action_after_build.stamp
