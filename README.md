@@ -15,10 +15,12 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 * [hardenedbsd/portzap](hardenedbsd/hardenedbsd/portzap) <br>
   A utility that manages a local copy of the
-  [hardenedbsd ports tree](https://git.hardenedbsd.org/hardenedbsd/ports)
+  [HardenedBSD ports tree](https://git.hardenedbsd.org/hardenedbsd/ports)
 * [hardenedbsd/sourcezap](hardenedbsd/hardenedbsd/sourcezap) <br>
   A utility that manages a local copy of the
-  [hardenedbsd source tree](https://git.hardenedbsd.org/hardenedbsd/ports)
+  [HardenedBSD source tree](https://git.hardenedbsd.org/hardenedbsd/ports)
+* [hardenedbsd/rubygem-bsdcontrol-rb](hardenedbsd/hardenedbsd/rubygem-bsdcontrol-rb/) <br>
+  Ruby bindings for libhbsdcontrol(3)
 
 ### OpenBSD
 

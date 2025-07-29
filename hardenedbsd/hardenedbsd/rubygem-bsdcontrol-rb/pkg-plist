@@ -1,0 +1,12 @@
+%%GEM_LIB_DIR%%/LICENSE
+%%GEM_LIB_DIR%%/README.md
+%%GEM_LIB_DIR%%/lib/bsd/control.rb
+%%GEM_LIB_DIR%%/lib/bsd/control/context.rb
+%%GEM_LIB_DIR%%/lib/bsd/control/feature.rb
+%%GEM_LIB_DIR%%/lib/bsd/control/version.rb
+%%GEM_LIB_DIR%%/lib/bsdcontrol.rb
+%%GEM_LIB_DIR%%/lib/bsdcontrol.rb.so
+%%GEM_LIB_DIR%%/share/bsdcontrol.rb/examples/1_available_features.rb
+%%GEM_LIB_DIR%%/share/bsdcontrol.rb/examples/2_feature_enable.rb
+%%GEM_LIB_DIR%%/share/bsdcontrol.rb/examples/3_feature_status.rb
+%%GEM_SPEC%%
