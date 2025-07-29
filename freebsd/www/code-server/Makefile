@@ -6,7 +6,7 @@ DISTFILES=	code-server-${DISTVERSION}.tgz:codeserver
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	0x1eef@protonmail.com
-COMMENT=	Run VS Code on any machine anywhere and access it in the browser
+COMMENT=	VS Code in the browser
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/release/LICENSE

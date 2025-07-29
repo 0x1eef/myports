@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# PROVIDE: code_server
+# PROVIDE: code-server
 # REQUIRE: LOGIN NETWORKING DAEMON
 # KEYWORD: shutdown
 #
@@ -10,15 +10,15 @@
 # code_server_enable (bool):	    Set to NO by default.
 #				                    Set it to YES to enable code-server.
 # OPTIONAL:
-# code_server_user_config (user):	Set to nobody by default.
+# code_server_user (user):	Set to nobody by default.
 #				                    Set to the user to run the server as.
-# code_server_group_config (group):	Set to nobody by default.
+# code_server_group (group):	Set to nobody by default.
 #				                    Set to the group to run the server as.
-# code_server_config_file (path):	Set to /var/code-server/nobody/config.yaml by default.
+# code_server_config_file (path):	Set to /home/nobody/.code-server/config.yaml by default.
 #				                        Set to the full filepath of the config file.
-# code_server_user_data_dir (path):	Set to /var/code-server/nobody/user-data by default.
+# code_server_user_data_dir (path):	Set to /home/nobody/.code-server/user-data by default.
 #				                    Set to the directory path to use for user data.
-# code_server_extensions_dir (path):	Set to /var/code-server/nobody/extensions by default.
+# code_server_extensions_dir (path):	Set to /home/nobody/.code-server/extensions by default.
 #				                        Set to the directory path to use for extensions.
 # code_server_service_url (url):	Set to https://open-vsx.org/vscode/gallery by default.
 #				                    Set to the service url of an extensions marketplace.
@@ -35,8 +35,8 @@
 
 . /etc/rc.subr
 
-name=code_server
-desc="VS Code code-server"
+name=code-server
+desc="VS Code in the browser"
 rcvar=code_server_enable
 
 load_rc_config $name
@@ -45,7 +45,7 @@ load_rc_config $name
 : ${code_server_user:=nobody}
 : ${code_server_group:=nobody}
 
-default_user_dir="/var/code-server/${code_server_user}"
+default_user_dir="/home/${code_server_user}/.code-server"
 : ${code_server_config_file="${default_user_dir}/config.yaml"}
 : ${code_server_user_data_dir="${default_user_dir}/user-data"}
 : ${code_server_extensions_dir="${default_user_dir}/extensions"}
@@ -54,18 +54,28 @@ default_user_dir="/var/code-server/${code_server_user}"
 
 export PATH=/usr/local/bin:$PATH
 export EXTENSIONS_GALLERY="{\"serviceUrl\": \"${code_server_service_url}\",\"itemUrl\": \"${code_server_item_url}\"}"
-export XDG_DATA_HOME="${default_user_dir}"
-export XDG_CONFIG_HOME="${default_user_dir}"
+export XDG_DATA_HOME="${default_user_dir}/.local/share"
+export XDG_CONFIG_HOME="${default_user_dir}/.config"
 
-start_precmd="${name}_prestart"
-
-command="/usr/local/bin/code-server"
-command_args="--config ${code_server_config_file} --user-data-dir ${code_server_user_data_dir} --extensions-dir ${code_server_extensions_dir} > /dev/null 2>&1 &"
 procname="node"
+pidfile="/var/run/code-server.pid"
+start_precmd="${name}_prestart"
+start_cmd="code_server_start"
 
 code_server_prestart()
 {
-    install -d -o ${code_server_user}  ${default_user_dir}
+    install -d -o ${code_server_user} ${default_user_dir}
+}
+
+code_server_start()
+{
+    /usr/sbin/daemon -cf \
+        -u ${code_server_user} \
+        -p ${pidfile} \
+        ${PREFIX:-/usr/local}/bin/code-server \
+        --config ${code_server_config_file} \
+        --user-data-dir ${code_server_user_data_dir} \
+        --extensions-dir ${code_server_extensions_dir}
 }
 
 run_rc_command "$1"
