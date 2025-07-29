@@ -10,8 +10,6 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
   Provides a pre-built release of [code-server](https://github.com/coder/code-server)
 * [mail/hydroxide](freebsd/mail/hydroxide) <br>
   A third-party, open-source ProtonMail bridge
-* [sysutils/bones](freebsd/sysutils/bones) <br>
-  Clone, pull, and install skeletons from a git repository
 
 ### HardenedBSD
 
