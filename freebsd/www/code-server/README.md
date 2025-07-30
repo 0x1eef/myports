@@ -50,17 +50,22 @@ See `coder/code-server` repo for docs: https://github.com/coder/code-server
 ## Maintainers
 
 The [build/](build/) subdirectory has its own Makefile. It will produce
-a tarball that includes a fully built code-server. This would be done
-by a maintainer, and the tarball uploaded as a github reelease.
+a tarball that includes a full code-server release. This is expected to
+be done by a maintainer, and the tarball uploaded as a GitHub reelease.
 
-The port Makefile in the parent directory then only downloads and
+The port Makefile in the parent directory then downloads and
 extracts the contents of the earlier build. This process avoids trying
 to download assets outside the fetch phase - either during build or
-install, which is typical for NPM projects and something the official
-FreeBSD ports system does not allow.
+install.
 
 The build process:
 
     $ cd build/
     $ make clean build
     $ ls work/code-server-X.X.X.tgz
+
+## Patches
+
+This port applies a patch that fixes terminal support on FreeBSD. And it takes
+care of setting up ripgrep for fuzzy file search support.
+
