@@ -66,6 +66,9 @@ The build process:
 
 ## Patches
 
-This port applies a patch that fixes terminal support on FreeBSD. And it takes
-care of setting up ripgrep for fuzzy file search support.
+This port applies a patch that fixes terminal support on FreeBSD,
+and another patch updates package.json to address a compile error
+for mongodb-js/kerberos
+(See https://github.com/mongodb-js/kerberos/commit/d3e1a717b5cbb8de01b44d2c083d8f6db317e738).
+The port also takes care of setting up ripgrep for fuzzy file search support.
 
