@@ -45,7 +45,8 @@ load_rc_config $name
 : ${code_server_user:=nobody}
 : ${code_server_group:=nobody}
 
-default_user_dir="/home/${code_server_user}/.code-server"
+home_dir="/home/${code_server_user}"
+default_user_dir="${home_dir}/.code-server"
 : ${code_server_config_file="${default_user_dir}/config.yaml"}
 : ${code_server_user_data_dir="${default_user_dir}/user-data"}
 : ${code_server_extensions_dir="${default_user_dir}/extensions"}
@@ -54,8 +55,8 @@ default_user_dir="/home/${code_server_user}/.code-server"
 
 export PATH=/usr/local/bin:$PATH
 export EXTENSIONS_GALLERY="{\"serviceUrl\": \"${code_server_service_url}\",\"itemUrl\": \"${code_server_item_url}\"}"
-export XDG_DATA_HOME="${default_user_dir}/.local/share"
-export XDG_CONFIG_HOME="${default_user_dir}/.config"
+export XDG_DATA_HOME="${home_dir}/.local/share"
+export XDG_CONFIG_HOME="${home_dir}/.config"
 
 procname="node"
 pidfile="/var/run/code-server.pid"
