@@ -56,7 +56,7 @@ thelounge_start()
     /usr/sbin/daemon -cf \
         -u ${thelounge_user} \
         -p ${pidfile} \
-        ${PREFIX:-/usr/local}/bin/thelounge
+        ${PREFIX:-/usr/local}/bin/thelounge start
 }
 
 run_rc_command "$1"
