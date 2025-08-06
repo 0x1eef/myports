@@ -36,12 +36,19 @@ load_rc_config $name
 
 procname="node"
 pidfile="/var/run/thelounge.pid"
+userdir="/var/thelounge/${thelounge_user}"
 start_precmd="${name}_prestart"
 start_cmd="thelounge_start"
 
+export THELOUNGE_HOME="${userdir}"
+
 thelounge_prestart()
 {
-    install -d -o ${thelounge_user} ${default_user_dir}
+    if [ ! -d "${userdir}" ]; then
+        mkdir -p "${userdir}"
+    fi
+    chown ${thelounge_user}:${thelounge_group} "${userdir}"
+    chmod u=rwx,go= "${userdir}"
 }
 
 thelounge_start()
