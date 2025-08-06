@@ -14,6 +14,22 @@ LICENSE_FILE=	${WRKDIR}/dist/LICENSE
 RUN_DEPENDS=	node>0:www/node
 NO_BUILD=	yes
 USES= 		tar:tgz shebangfix
+SHEBANG_FILES= ${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/__init__.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/easy_xml_test.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/input_test.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/common_test.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings_test.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs_test.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/gyp_main.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/tools/graphviz.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/tools/pretty_gyp.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/tools/pretty_sln.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/tools/pretty_vcproj.py \
+		${WRKSRC}/node_modules/node-gyp/gyp/test_gyp.py \
+		${WRKSRC}/node_modules/node-gyp/update-gyp.py
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}

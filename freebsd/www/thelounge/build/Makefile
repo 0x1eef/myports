@@ -12,8 +12,8 @@ GH_ACCOUNT=	thelounge
 GH_PROJECT=	thelounge
 GH_TAGNAME=	v${DISTVERSION}
 
-USES=		tar:tgz shebangfix
 BUILD_DEPENDS=	yarn>0:www/yarn
+USES=		tar:tgz
 
 do-build:
 	cd ${WRKSRC} && \
