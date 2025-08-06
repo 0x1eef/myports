@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/dist/LICENSE
 
 NO_BUILD=	yes
 RUN_DEPENDS=	node>0:www/node
-USES= 		tar:tgz shebangfix
+USES= 		tar:tgz shebangfix python:3.0+
 SHEBANG_FILES= ${WRKSRC}/node_modules/node-gyp/gyp/tools/graphviz.py \
 		${WRKSRC}/node_modules/node-gyp/gyp/tools/pretty_gyp.py \
 		${WRKSRC}/node_modules/node-gyp/gyp/tools/pretty_vcproj.py \
