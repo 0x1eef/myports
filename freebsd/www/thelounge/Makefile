@@ -35,6 +35,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	touch ${STAGEDIR}${DATADIR}/.thelounge_home
 	${CP} -R ${WRKSRC}/dist ${STAGEDIR}${DATADIR}/
+	${CP} -R ${WRKSRC}/client ${STAGEDIR}${DATADIR}/
 	${CP} -R ${WRKSRC}/public ${STAGEDIR}${DATADIR}/
 	${CP} -R ${WRKSRC}/node_modules ${STAGEDIR}${DATADIR}/
 	${CP} ${WRKSRC}/package.json ${STAGEDIR}${DATADIR}
