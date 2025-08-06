@@ -20,7 +20,7 @@ do-build:
 		yarn install && \
 		NODE_ENV=production yarn build && \
 		cp LICENSE dist/LICENSE && \
-	  	tar -czf ../thelounge-${DISTVERSION}.tgz node_modules/ public/ dist/ package.json index.js
+	  	tar -czf ../thelounge-${DISTVERSION}.tgz node_modules/ public/ client/ dist/ package.json index.js
 	@${ECHO_MSG} "${WRKDIR}/thelounge-${DISTVERSION}.tgz"
 
 
