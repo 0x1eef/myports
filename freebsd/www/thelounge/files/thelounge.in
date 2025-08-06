@@ -1,0 +1,55 @@
+#!/bin/sh
+
+# PROVIDE: thelounge
+# REQUIRE: LOGIN NETWORKING DAEMON
+# KEYWORD: shutdown
+#
+# Add these lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# thelounge_enable (bool):	    Set to NO by default.
+#				                    Set it to YES to enable code-server.
+# OPTIONAL:
+# thelounge_user (user):	Set to nobody by default.
+#				                    Set to the user to run the server as.
+# thelounge_group (group):	Set to nobody by default.
+#				                    Set to the group to run the server as.
+# NOTE
+# The file permissions one has when using vscode from a web browser is dependant
+# on the user/group you choose to run this service. It defaults to "nobody" for
+# security reasons but you will probably want to specify a different user with
+# the appropriate permissions for your use case in "/etc/rc.conf" like:
+# thelounge_user="myuser"
+# thelounge_group="myuser"
+
+. /etc/rc.subr
+
+name=thelounge
+desc="The self-hosted web IRC client"
+rcvar=thelounge_enable
+
+load_rc_config $name
+
+: ${thelounge_enable:=no}
+: ${thelounge_user:=nobody}
+: ${thelounge_group:=nobody}
+
+procname="node"
+pidfile="/var/run/thelounge.pid"
+start_precmd="${name}_prestart"
+start_cmd="thelounge_start"
+
+thelounge_prestart()
+{
+    install -d -o ${thelounge_user} ${default_user_dir}
+}
+
+thelounge_start()
+{
+    /usr/sbin/daemon -cf \
+        -u ${thelounge_user} \
+        -p ${pidfile} \
+        ${PREFIX:-/usr/local}/bin/thelounge
+}
+
+run_rc_command "$1"
