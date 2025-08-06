@@ -8,6 +8,8 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 * [www/code-server](freebsd/www/code-server/) <br>
   Provides a pre-built release of [code-server](https://github.com/coder/code-server)
+* [www/thelounge](freebsd/www/thelounge/) <br>
+  Provides a pre-built release of [thelounge.chat](https://thelounge.chat)
 * [mail/hydroxide](freebsd/mail/hydroxide) <br>
   A third-party, open-source ProtonMail bridge
 
