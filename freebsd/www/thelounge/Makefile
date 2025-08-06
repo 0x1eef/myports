@@ -24,6 +24,6 @@ do-install:
 	${CP} ${WRKDIR}/package.json ${STAGEDIR}${DATADIR}
 	${CP} ${WRKDIR}/index.js ${STAGEDIR}${DATADIR}
 	${INSTALL_SCRIPT} ${FILESDIR}/thelounge.in ${STAGEDIR}${PREFIX}/etc/rc.d/thelounge
-	${LN} -sf ${STAGEDIR}${DATADIR}/index.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${RLN} ${STAGEDIR}${DATADIR}/index.js ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>
