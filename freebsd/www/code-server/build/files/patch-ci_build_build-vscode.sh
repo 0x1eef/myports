@@ -1,4 +1,4 @@
---- ci/build/build-vscode.sh.orig	2025-07-19 19:25:30 UTC
+--- ci/build/build-vscode.sh.orig	2025-09-27 15:43:50 UTC
 +++ ci/build/build-vscode.sh
 @@ -65,7 +65,7 @@ main() {
    #
@@ -9,7 +9,7 @@
    cp product.json product.original.json # Since jq has no inline edit.
    jq --slurp '.[0] * .[1]' product.original.json <(
      cat << EOF
-@@ -117,7 +117,7 @@ EOF
+@@ -119,7 +119,7 @@ EOF
    # Reset so if you develop after building you will not be stuck with the wrong
    # commit (the dev client will use `oss-dev` but the dev server will still use
    # product.json which will have `stable-$commit`).
