@@ -1,10 +1,10 @@
 PORTNAME=	code-server
-DISTVERSION=	4.102.2
+DISTVERSION=	4.104.2
 CATEGORIES=	devel
 MASTER_SITES= https://github.com/microsoft/vscode/archive/refs/tags/:vscode
 DISTFILES= ${_VSCODE_VERSION}.tar.gz:vscode
 DIST_SUBDIR=	code-server
-_VSCODE_VERSION=1.102.2
+_VSCODE_VERSION=1.104.2
 
 BATCH=	1
 MAINTAINER=	0x1eef@protonmail.com

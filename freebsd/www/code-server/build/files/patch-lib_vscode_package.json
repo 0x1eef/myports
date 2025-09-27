@@ -1,9 +1,9 @@
---- lib/vscode/package.json.orig	2025-07-20 05:05:29 UTC
+--- lib/vscode/package.json.orig	2025-09-27 07:49:34 UTC
 +++ lib/vscode/package.json
-@@ -99,7 +99,7 @@
-     "http-proxy-agent": "^7.0.0",
+@@ -101,7 +101,7 @@
      "https-proxy-agent": "^7.0.2",
      "jschardet": "3.1.4",
+     "katex": "^0.16.22",
 -    "kerberos": "2.1.1",
 +    "kerberos": "github:mongodb-js/kerberos",
      "minimist": "^1.2.8",
