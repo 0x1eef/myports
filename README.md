@@ -15,6 +15,8 @@ A collection of unofficial FreeBSD / HardenedBSD / OpenBSD ports.
 
 ### HardenedBSD
 
+* [hardenedbsd/control](hardenedbsd/hardenedbsd/control/) <br>
+  An alternative to the hbsdcontrol(8) utility
 * [hardenedbsd/portzap](hardenedbsd/hardenedbsd/portzap) <br>
   A utility that manages a local copy of the
   [HardenedBSD ports tree](https://git.hardenedbsd.org/hardenedbsd/ports)
