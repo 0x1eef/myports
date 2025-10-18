@@ -1,5 +1,5 @@
 PORTNAME=           control
-PORTVERSION=        0.3.2
+PORTVERSION=        0.3.3
 DISTVERSIONPREFIX=  v
 CATEGORIES=         hardenedbsd
 

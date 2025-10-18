@@ -1,5 +1,5 @@
-TIMESTAMP = 1760750330
-SHA256 (go/hardenedbsd_control/control-v0.3.2/v0.3.2.tar.gz) = 8dfd102cb2fc1ce246ba5000cac61b3ba5860544000e9492369f78196a357f7a
-SIZE (go/hardenedbsd_control/control-v0.3.2/v0.3.2.tar.gz) = 4435
-SHA256 (go/hardenedbsd_control/control-v0.3.2/go.mod) = 2984cd319dd76c7fc985a1aedf1676d56c109615275b4131bcafdfe36b7a0499
-SIZE (go/hardenedbsd_control/control-v0.3.2/go.mod) = 99
+TIMESTAMP = 1760753556
+SHA256 (go/hardenedbsd_control/control-v0.3.3/v0.3.3.tar.gz) = dd6510887f1ad2b69cdb64286d98f57306c32752daf45a6fc1fc4677df7e4e24
+SIZE (go/hardenedbsd_control/control-v0.3.3/v0.3.3.tar.gz) = 4462
+SHA256 (go/hardenedbsd_control/control-v0.3.3/go.mod) = 2984cd319dd76c7fc985a1aedf1676d56c109615275b4131bcafdfe36b7a0499
+SIZE (go/hardenedbsd_control/control-v0.3.3/go.mod) = 99
