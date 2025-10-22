@@ -1,17 +1,17 @@
-PORTNAME=           control
-PORTVERSION=        0.3.5
+PORTNAME=           hbcontrol
+PORTVERSION=        1.0.0
 DISTVERSIONPREFIX=  v
 CATEGORIES=         hardenedbsd
 
 MAINTAINER=     0x1eef@protonmail.com
 COMMENT=        An alternative implementation of hbsdcontrol(8)
-WWW=            https://github.com/0x1eef/control
+WWW=            https://github.com/0x1eef/hbcontrol
 LICENSE=        BSD0CLAUSE
 LICENSE_FILE=   ${WRKSRC}/LICENSE
 
 USES=           go:modules
 GO_PKGNAME=     control
-GO_MODULE=      github.com/0x1eef/control
+GO_MODULE=      github.com/0x1eef/hbcontrol
 
 GH_ACCOUNT=     0x1eef
 GH_PROJECT=     control
@@ -23,10 +23,10 @@ WRKSRC=         ${WRKDIR}/${GH_PROJECT}-${PORTVERSION}
 
 GO_MOD_DIST=    github
 
-GO_TARGET=      ./cmd/control/
+GO_TARGET=      ./cmd/hbcontrol/
 GO_ENV+=        GOMAXPROCS=1
 GO_ENV+=        GOPROXY=direct
-PLIST_FILES=    bin/control share/man/man8/control.8.gz
+PLIST_FILES=    bin/hbcontrol share/man/man8/hbcontrol.8.gz
 
 do-install:
 	@${ECHO_MSG} "===> Running project's own make install in ${GO_WRKSRC}"
