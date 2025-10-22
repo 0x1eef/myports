@@ -1,7 +1,7 @@
 PORTNAME=           hbcontrol
 PORTVERSION=        1.0.0
 DISTVERSIONPREFIX=  v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=         hardenedbsd
 
 MAINTAINER=     0x1eef@protonmail.com
@@ -15,7 +15,7 @@ GO_PKGNAME=     hbcontrol
 GO_MODULE=      github.com/0x1eef/hbcontrol
 
 GH_ACCOUNT=     0x1eef
-GH_PROJECT=     control
+GH_PROJECT=     hbcontrol
 
 DISTFILES=      ${DISTVERSIONFULL}${EXTRACT_SUFX}
 MASTER_SITES=   https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/archive/refs/tags/
