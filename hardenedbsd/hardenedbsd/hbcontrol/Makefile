@@ -1,6 +1,7 @@
 PORTNAME=           hbcontrol
 PORTVERSION=        1.0.0
 DISTVERSIONPREFIX=  v
+PORTREVISION=	1
 CATEGORIES=         hardenedbsd
 
 MAINTAINER=     0x1eef@protonmail.com
@@ -10,7 +11,7 @@ LICENSE=        BSD0CLAUSE
 LICENSE_FILE=   ${WRKSRC}/LICENSE
 
 USES=           go:modules
-GO_PKGNAME=     control
+GO_PKGNAME=     hbcontrol
 GO_MODULE=      github.com/0x1eef/hbcontrol
 
 GH_ACCOUNT=     0x1eef
