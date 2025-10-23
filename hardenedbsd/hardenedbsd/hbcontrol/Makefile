@@ -1,7 +1,6 @@
 PORTNAME=           hbcontrol
 PORTVERSION=        1.1.0
 DISTVERSIONPREFIX=  v
-PORTREVISION=	2
 CATEGORIES=         hardenedbsd
 
 MAINTAINER=     0x1eef@protonmail.com
