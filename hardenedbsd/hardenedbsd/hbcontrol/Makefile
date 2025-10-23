@@ -1,5 +1,5 @@
 PORTNAME=           hbcontrol
-PORTVERSION=        1.0.0
+PORTVERSION=        1.1.0
 DISTVERSIONPREFIX=  v
 PORTREVISION=	2
 CATEGORIES=         hardenedbsd

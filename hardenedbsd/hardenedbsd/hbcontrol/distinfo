@@ -1,5 +1,5 @@
-TIMESTAMP = 1761126297
-SHA256 (go/hardenedbsd_hbcontrol/hbcontrol-v1.0.0/v1.0.0.tar.gz) = 81fff6c396b6e438dbbf46806250f29aa9370871f554377c39811367764693f6
-SIZE (go/hardenedbsd_hbcontrol/hbcontrol-v1.0.0/v1.0.0.tar.gz) = 4453
-SHA256 (go/hardenedbsd_hbcontrol/hbcontrol-v1.0.0/go.mod) = 2984cd319dd76c7fc985a1aedf1676d56c109615275b4131bcafdfe36b7a0499
-SIZE (go/hardenedbsd_hbcontrol/hbcontrol-v1.0.0/go.mod) = 99
+TIMESTAMP = 1761194660
+SHA256 (go/hardenedbsd_hbcontrol/hbcontrol-v1.1.0/v1.1.0.tar.gz) = bba8ed6c930159fd11cbaa80e0490e94ec435b0de5d3980f1bf33fbd023b502f
+SIZE (go/hardenedbsd_hbcontrol/hbcontrol-v1.1.0/v1.1.0.tar.gz) = 4849
+SHA256 (go/hardenedbsd_hbcontrol/hbcontrol-v1.1.0/go.mod) = c53d4ddc2145e8c542021cad830f3482c18cfa958c2eaca3a8e8ee4ca44c8207
+SIZE (go/hardenedbsd_hbcontrol/hbcontrol-v1.1.0/go.mod) = 101
