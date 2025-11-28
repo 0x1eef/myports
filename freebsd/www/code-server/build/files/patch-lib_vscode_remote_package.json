@@ -1,4 +1,4 @@
---- lib/vscode/remote/package.json.orig	2025-09-27 14:56:37 UTC
+--- lib/vscode/remote/package.json.orig	2025-11-27 20:00:13 UTC
 +++ lib/vscode/remote/package.json
 @@ -30,7 +30,7 @@
      "https-proxy-agent": "^7.0.2",
@@ -8,4 +8,4 @@
 +    "kerberos": "github:mongodb-js/kerberos",
      "minimist": "^1.2.8",
      "native-watchdog": "^1.4.1",
-     "node-pty": "^1.1.0-beta33",
+     "node-pty": "1.1.0-beta35",
