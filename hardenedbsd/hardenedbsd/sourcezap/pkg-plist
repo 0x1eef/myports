@@ -11,8 +11,8 @@ libexec/sourcezap/functions/print.sh
 libexec/sourcezap/scripts/get-default-umask
 libexec/sourcezap/scripts/git
 libexec/sourcezap/scripts/is-sourcezap-member
-libexec/sourcezap/scripts/mdo-sh
 libexec/sourcezap/scripts/setup-user
+libexec/sourcezap/scripts/sh
 man/man8/sourcezap.8
 %%DATADIR%%/LICENSE
 %%DATADIR%%/NEWS
