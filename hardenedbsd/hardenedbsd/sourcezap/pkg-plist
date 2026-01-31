@@ -1,4 +1,5 @@
 bin/sourcezap
+libexec/sourcezap/commands/sourcezap-apply
 libexec/sourcezap/commands/sourcezap-clone
 libexec/sourcezap/commands/sourcezap-install
 libexec/sourcezap/commands/sourcezap-pull
@@ -9,16 +10,10 @@ libexec/sourcezap/commands/sourcezap-teardown
 libexec/sourcezap/functions/print.sh
 libexec/sourcezap/scripts/get-default-umask
 libexec/sourcezap/scripts/git
-libexec/sourcezap/scripts/git-get-changed-files
-libexec/sourcezap/scripts/git-get-removed-files
-libexec/sourcezap/scripts/install
 libexec/sourcezap/scripts/is-sourcezap-member
-libexec/sourcezap/scripts/setup-doas
+libexec/sourcezap/scripts/mdo-sh
 libexec/sourcezap/scripts/setup-user
-libexec/sourcezap/scripts/update-changed-files
-libexec/sourcezap/scripts/update-deleted-files
 man/man8/sourcezap.8
 %%DATADIR%%/LICENSE
 %%DATADIR%%/NEWS
 %%DATADIR%%/VERSION
-%%DATADIR%%/doas.conf

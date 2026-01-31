@@ -3,7 +3,7 @@ PORTVERSION=        2.0.0
 DISTVERSIONPREFIX=  v
 CATEGORIES=         hardenedbsd
 
-MAINTAINER=     0x1eef@protonmail.com
+MAINTAINER=     0x1eef@hardenedbsd.org
 COMMENT=        Manages a local copy of the hardenedbsd ports tree
 WWW=            https://git.hardenedbsd.org/0x1eef/portzap
 
