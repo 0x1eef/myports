@@ -1,4 +1,5 @@
 bin/portzap
+etc/rc.d/portzap
 libexec/portzap/commands/portzap-apply
 libexec/portzap/commands/portzap-clone
 libexec/portzap/commands/portzap-install
@@ -6,13 +7,16 @@ libexec/portzap/commands/portzap-pull
 libexec/portzap/commands/portzap-rm
 libexec/portzap/commands/portzap-setup
 libexec/portzap/commands/portzap-sh
+libexec/portzap/commands/portzap-status
 libexec/portzap/commands/portzap-teardown
+libexec/portzap/commands/portzap-unapply
+libexec/portzap/functions/mdo.sh
 libexec/portzap/functions/print.sh
 libexec/portzap/scripts/get-default-umask
+libexec/portzap/scripts/get-mdo-rule
 libexec/portzap/scripts/git
-libexec/portzap/scripts/is-portzap-member
+libexec/portzap/scripts/mdo
 libexec/portzap/scripts/setup-user
-libexec/portzap/scripts/sh
 man/man8/portzap.8
 %%DATADIR%%/LICENSE
 %%DATADIR%%/NEWS
