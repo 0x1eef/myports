@@ -1,4 +1,5 @@
 bin/sourcezap
+etc/rc.d/sourcezap
 libexec/sourcezap/commands/sourcezap-apply
 libexec/sourcezap/commands/sourcezap-clone
 libexec/sourcezap/commands/sourcezap-install
@@ -6,13 +7,16 @@ libexec/sourcezap/commands/sourcezap-pull
 libexec/sourcezap/commands/sourcezap-rm
 libexec/sourcezap/commands/sourcezap-setup
 libexec/sourcezap/commands/sourcezap-sh
+libexec/sourcezap/commands/sourcezap-status
 libexec/sourcezap/commands/sourcezap-teardown
+libexec/sourcezap/commands/sourcezap-unapply
+libexec/sourcezap/functions/mdo.sh
 libexec/sourcezap/functions/print.sh
 libexec/sourcezap/scripts/get-default-umask
+libexec/sourcezap/scripts/get-mdo-rule
 libexec/sourcezap/scripts/git
-libexec/sourcezap/scripts/is-sourcezap-member
+libexec/sourcezap/scripts/mdo
 libexec/sourcezap/scripts/setup-user
-libexec/sourcezap/scripts/sh
 man/man8/sourcezap.8
 %%DATADIR%%/LICENSE
 %%DATADIR%%/NEWS
