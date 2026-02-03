@@ -1,13 +1,13 @@
 PORTNAME=	code-server
-DISTVERSION=	4.106.2
+DISTVERSION=	4.108.2
 CATEGORIES=	devel
 MASTER_SITES= https://github.com/microsoft/vscode/archive/refs/tags/:vscode
 DISTFILES= ${_VSCODE_VERSION}.tar.gz:vscode
 DIST_SUBDIR=	code-server
-_VSCODE_VERSION=1.106.2
+_VSCODE_VERSION=1.108.2
 
 BATCH=	1
-MAINTAINER=	0x1eef@protonmail.com
+MAINTAINER=	0x1eef@hardenedbsd.org
 COMMENT=	Maintainer's makefile for code-server
 
 USE_GITHUB=	yes
@@ -15,8 +15,9 @@ GH_ACCOUNT=	coder
 GH_PROJECT=	code-server
 GH_TAGNAME=	v${DISTVERSION}
 
-USES=		tar:tgz shebangfix python:3.0+
-BUILD_DEPENDS=	npm-node22>0:www/npm-node22 rsync>0:net/rsync quilt>0:devel/quilt
+USES=		xorg tar:tgz shebangfix python:3.0+
+USE_XORG=    x11 xkbfile
+BUILD_DEPENDS=	npm-node22>0:www/npm-node22 rsync>0:net/rsync quilt>0:devel/quilt python3>0:lang/python3 jq:textproc/jq
 
 post-patch:
 	cd ${WRKSRC} && quilt push -a
