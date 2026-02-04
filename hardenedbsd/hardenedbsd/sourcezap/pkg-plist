@@ -15,6 +15,7 @@ libexec/sourcezap/functions/print.sh
 libexec/sourcezap/scripts/get-default-umask
 libexec/sourcezap/scripts/get-mdo-rule
 libexec/sourcezap/scripts/git
+libexec/sourcezap/scripts/install-check
 libexec/sourcezap/scripts/mdo
 libexec/sourcezap/scripts/setup-user
 man/man8/sourcezap.8
