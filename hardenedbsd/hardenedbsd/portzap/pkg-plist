@@ -15,6 +15,7 @@ libexec/portzap/functions/print.sh
 libexec/portzap/scripts/get-default-umask
 libexec/portzap/scripts/get-mdo-rule
 libexec/portzap/scripts/git
+libexec/portzap/scripts/install-check
 libexec/portzap/scripts/mdo
 libexec/portzap/scripts/setup-user
 man/man8/portzap.8
