@@ -1,5 +1,6 @@
 PORTNAME=           ctrl
 PORTVERSION=        3.0.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=  v
 CATEGORIES=         hardenedbsd
 
@@ -24,9 +25,7 @@ GO_ENV+=        GOMAXPROCS=1
 GO_ENV+=        GOPROXY=direct
 PLIST_FILES=    bin/ctrl share/man/man8/ctrl.8.gz
 
-do-install:
-	@${ECHO_MSG} "===> Running project's own make install in ${GO_WRKSRC}"
-	@(cd ${GO_WRKSRC}; \
-		${SETENVI} ${MAKE_ENV} ${GO_ENV} ${MAKE_CMD} install PREFIX=${STAGEDIR}${PREFIX})
+post-stage:
+	@${CP} ${WRKSRC}/share/man/man8/ctrl.8 ${STAGEDIR}/${PREFIX}/share/man/man8/
 
 .include <bsd.port.mk>
